@@ -1,0 +1,8 @@
+total trades:  0
+net pnl:       +0.00
+hpr:           0.00%
+sharpe:        0.0000
+max drawdown:  0.00%
+win rate:      0.00%
+avg win:       +0.00
+avg loss:      +0.00

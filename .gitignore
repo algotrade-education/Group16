@@ -1,13 +1,4 @@
 .env
 __pycache__/
 *.pyc
-*.pyo
-venv/
-.venv/
-orders.db
-logs/*.log
-results/backtest/*/
-results/optimize/*/
-data/sample/*.csv
-*.egg-info/
-.DS_Store
+*.pyo 

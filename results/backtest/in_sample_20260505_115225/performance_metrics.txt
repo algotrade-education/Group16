@@ -1,0 +1,8 @@
+total trades:  568
+net pnl:       -4425.40
+hpr:           -0.00%
+sharpe:        -0.0202
+max drawdown:  -0.06%
+win rate:      35.39%
+avg win:       +5980.55
+avg loss:      -3287.51

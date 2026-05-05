@@ -1,0 +1,116 @@
+[2026-03-30 10:21:18] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=5|34=2|49=0c6ba5672f96498abe52990b491f002c|52=20260330-03:21:18.245|56=SERVER|1=main|553=Group16|10=157|
+[2026-03-30 10:21:18] [INFO] Session created: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 10:21:18] [DEBUG] FIXSessionManager initialized config=/tmp/paperbroker_5mhpvgq_.cfg username=Group16
+[2026-03-30 10:21:18] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-30 10:21:18] [INFO] Starting FIX session...
+[2026-03-30 10:21:18] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-30 10:21:18] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=0c6ba5672f96498abe52990b491f002c|52=20260330-03:21:18.388|56=SERVER|1=main|98=0|108=30|141=Y|553=Group16|554=CqNO5I7KfygR|10=195|
+[2026-03-30 10:21:19] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-30 10:21:19] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260330-03:21:19.575|56=0c6ba5672f96498abe52990b491f002c|98=0|108=30|141=Y|10=115|
+[2026-03-30 10:21:19] [INFO] event=fix_id_resolved username=Group16 fixAccountID=95bf1129dd2c4e4a96720ec3bfdceb06
+[2026-03-30 10:21:19] [INFO] Logon success: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 10:21:19] [INFO] Order manager session set: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 10:21:19] [DEBUG] No handlers registered for event 'fix:logon'
+[2026-03-30 10:21:19] [INFO] Initialized KafkaMarketDataClient: 52.77.119.94:9092, merge_updates=True
+[2026-03-30 10:21:19] [INFO] Subscribed to HNXDS:VN30F2604 (topic: real.HNXDS.VN30F2604)
+[2026-03-30 10:21:19] [INFO] Starting Kafka consumer for topics: ['real.HNXDS.VN30F2604']
+[2026-03-30 10:21:19] [INFO] Kafka consumer thread started
+[2026-03-30 10:21:19] [INFO] Kafka consumer started
+[2026-03-30 10:21:48] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=2|49=0c6ba5672f96498abe52990b491f002c|52=20260330-03:21:48.154|56=SERVER|1=main|553=Group16|10=154|
+[2026-03-30 10:21:49] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=2|49=SERVER|52=20260330-03:21:49.718|56=0c6ba5672f96498abe52990b491f002c|10=022|
+[2026-03-30 10:22:18] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=3|49=0c6ba5672f96498abe52990b491f002c|52=20260330-03:22:18.143|56=SERVER|1=main|553=Group16|10=151|
+[2026-03-30 10:22:19] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=3|49=SERVER|52=20260330-03:22:19.718|56=0c6ba5672f96498abe52990b491f002c|10=021|
+[2026-03-30 10:22:48] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=0c6ba5672f96498abe52990b491f002c|52=20260330-03:22:48.036|56=SERVER|1=main|553=Group16|10=156|
+[2026-03-30 10:22:49] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=4|49=SERVER|52=20260330-03:22:49.718|56=0c6ba5672f96498abe52990b491f002c|10=025|
+[2026-03-30 10:22:50] [INFO] Stopping Kafka consumer...
+[2026-03-30 10:22:50] [INFO] Kafka consumer thread stopped
+[2026-03-30 10:22:50] [INFO] Kafka consumer stopped
+[2026-03-30 19:20:14] [INFO] Session created: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:20:14] [DEBUG] FIXSessionManager initialized config=/tmp/paperbroker_xndsfmyl.cfg username=Group16
+[2026-03-30 19:20:14] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-30 19:20:14] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-30 19:20:14] [DEBUG] Registered handler for event 'fix:order:accepted'. Total handlers: 2
+[2026-03-30 19:20:14] [DEBUG] Registered handler for event 'fix:order:filled'. Total handlers: 3
+[2026-03-30 19:20:14] [INFO] Starting FIX session...
+[2026-03-30 19:20:14] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-30 19:20:15] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:20:15.025|56=SERVER|1=main|98=0|108=30|141=Y|553=Group16|554=CqNO5I7KfygR|10=179|
+[2026-03-30 19:20:15] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-30 19:20:15] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260330-12:20:15.496|56=0c6ba5672f96498abe52990b491f002c|98=0|108=30|141=Y|10=112|
+[2026-03-30 19:20:15] [INFO] event=fix_id_resolved username=Group16 fixAccountID=95bf1129dd2c4e4a96720ec3bfdceb06
+[2026-03-30 19:20:15] [INFO] Logon success: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:20:15] [INFO] Order manager session set: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:20:15] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-30 19:20:15] [INFO] Initialized KafkaMarketDataClient: 52.77.119.94:9092, merge_updates=True
+[2026-03-30 19:20:15] [INFO] Subscribed to HNXDS:VN30F2604 (topic: real.HNXDS.VN30F2604)
+[2026-03-30 19:20:15] [INFO] Starting Kafka consumer for topics: ['real.HNXDS.VN30F2604']
+[2026-03-30 19:20:16] [INFO] Kafka consumer thread started
+[2026-03-30 19:20:16] [INFO] Kafka consumer started
+[2026-03-30 19:20:45] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=2|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:20:45.553|56=SERVER|1=main|553=Group16|10=153|
+[2026-03-30 19:20:46] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=2|49=SERVER|52=20260330-12:20:45.718|56=0c6ba5672f96498abe52990b491f002c|10=017|
+[2026-03-30 19:21:15] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=3|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:21:15.394|56=SERVER|1=main|553=Group16|10=155|
+[2026-03-30 19:21:16] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=3|49=SERVER|52=20260330-12:21:15.718|56=0c6ba5672f96498abe52990b491f002c|10=016|
+[2026-03-30 19:21:45] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:21:45.420|56=SERVER|1=main|553=Group16|10=149|
+[2026-03-30 19:21:46] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=4|49=SERVER|52=20260330-12:21:45.718|56=0c6ba5672f96498abe52990b491f002c|10=020|
+[2026-03-30 19:22:15] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=5|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:22:15.025|56=SERVER|1=main|553=Group16|10=149|
+[2026-03-30 19:22:16] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=5|49=SERVER|52=20260330-12:22:15.718|56=0c6ba5672f96498abe52990b491f002c|10=019|
+[2026-03-30 19:22:19] [INFO] Stopping Kafka consumer...
+[2026-03-30 19:22:20] [INFO] Kafka consumer thread stopped
+[2026-03-30 19:22:20] [INFO] Kafka consumer stopped
+[2026-03-30 19:22:24] [INFO] Session created: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:22:24] [DEBUG] FIXSessionManager initialized config=/tmp/paperbroker_0vkuptkj.cfg username=Group16
+[2026-03-30 19:22:24] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-30 19:22:24] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-30 19:22:24] [DEBUG] Registered handler for event 'fix:order:accepted'. Total handlers: 2
+[2026-03-30 19:22:24] [DEBUG] Registered handler for event 'fix:order:filled'. Total handlers: 3
+[2026-03-30 19:22:24] [INFO] Starting FIX session...
+[2026-03-30 19:22:24] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-30 19:22:24] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:22:24.647|56=SERVER|1=main|98=0|108=30|141=Y|553=Group16|554=CqNO5I7KfygR|10=191|
+[2026-03-30 19:22:25] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-30 19:22:25] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260330-12:22:25.396|56=0c6ba5672f96498abe52990b491f002c|98=0|108=30|141=Y|10=114|
+[2026-03-30 19:22:25] [INFO] event=fix_id_resolved username=Group16 fixAccountID=95bf1129dd2c4e4a96720ec3bfdceb06
+[2026-03-30 19:22:25] [INFO] Logon success: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:22:25] [INFO] Order manager session set: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:22:25] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-30 19:22:25] [INFO] Initialized KafkaMarketDataClient: 52.77.119.94:9092, merge_updates=True
+[2026-03-30 19:22:25] [INFO] Subscribed to HNXDS:VN30F2604 (topic: real.HNXDS.VN30F2604)
+[2026-03-30 19:22:25] [INFO] Starting Kafka consumer for topics: ['real.HNXDS.VN30F2604']
+[2026-03-30 19:22:25] [INFO] Kafka consumer thread started
+[2026-03-30 19:22:25] [INFO] Kafka consumer started
+[2026-03-30 19:22:54] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=2|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:22:54.779|56=SERVER|1=main|553=Group16|10=165|
+[2026-03-30 19:22:55] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=2|49=SERVER|52=20260330-12:22:55.718|56=0c6ba5672f96498abe52990b491f002c|10=020|
+[2026-03-30 19:23:24] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=3|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:23:24.439|56=SERVER|1=main|553=Group16|10=157|
+[2026-03-30 19:23:26] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=3|49=SERVER|52=20260330-12:23:25.718|56=0c6ba5672f96498abe52990b491f002c|10=019|
+[2026-03-30 19:23:27] [INFO] Stopping Kafka consumer...
+[2026-03-30 19:23:27] [INFO] Kafka consumer thread stopped
+[2026-03-30 19:23:28] [INFO] Kafka consumer stopped
+[2026-03-30 19:23:33] [INFO] Session created: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:23:33] [DEBUG] FIXSessionManager initialized config=/tmp/paperbroker_j1mumks6.cfg username=Group16
+[2026-03-30 19:23:33] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-30 19:23:33] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-30 19:23:33] [DEBUG] Registered handler for event 'fix:order:accepted'. Total handlers: 2
+[2026-03-30 19:23:33] [DEBUG] Registered handler for event 'fix:order:filled'. Total handlers: 3
+[2026-03-30 19:23:33] [INFO] Starting FIX session...
+[2026-03-30 19:23:33] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-30 19:23:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:23:33.213|56=SERVER|1=main|98=0|108=30|141=Y|553=Group16|554=CqNO5I7KfygR|10=181|
+[2026-03-30 19:23:34] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-30 19:23:34] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260330-12:23:33.895|56=0c6ba5672f96498abe52990b491f002c|98=0|108=30|141=Y|10=118|
+[2026-03-30 19:23:34] [INFO] event=fix_id_resolved username=Group16 fixAccountID=95bf1129dd2c4e4a96720ec3bfdceb06
+[2026-03-30 19:23:34] [INFO] Logon success: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:23:34] [INFO] Order manager session set: FIX.4.4:0c6ba5672f96498abe52990b491f002c->SERVER
+[2026-03-30 19:23:34] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-30 19:23:34] [INFO] Initialized KafkaMarketDataClient: 52.77.119.94:9092, merge_updates=True
+[2026-03-30 19:23:34] [INFO] Subscribed to HNXDS:VN30F2604 (topic: real.HNXDS.VN30F2604)
+[2026-03-30 19:23:34] [INFO] Starting Kafka consumer for topics: ['real.HNXDS.VN30F2604']
+[2026-03-30 19:23:34] [INFO] Kafka consumer thread started
+[2026-03-30 19:23:34] [INFO] Kafka consumer started
+[2026-03-30 19:24:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=2|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:24:03.642|56=SERVER|1=main|553=Group16|10=150|
+[2026-03-30 19:24:04] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=2|49=SERVER|52=20260330-12:24:04.718|56=0c6ba5672f96498abe52990b491f002c|10=016|
+[2026-03-30 19:24:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=3|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:24:33.011|56=SERVER|1=main|553=Group16|10=144|
+[2026-03-30 19:24:34] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=3|49=SERVER|52=20260330-12:24:34.718|56=0c6ba5672f96498abe52990b491f002c|10=020|
+[2026-03-30 19:25:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:25:03.506|56=SERVER|1=main|553=Group16|10=152|
+[2026-03-30 19:25:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=4|49=SERVER|52=20260330-12:25:04.718|56=0c6ba5672f96498abe52990b491f002c|10=019|
+[2026-03-30 19:25:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=5|49=0c6ba5672f96498abe52990b491f002c|52=20260330-12:25:33.143|56=SERVER|1=main|553=Group16|10=153|
+[2026-03-30 19:25:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=5|49=SERVER|52=20260330-12:25:34.718|56=0c6ba5672f96498abe52990b491f002c|10=023|
+[2026-03-30 19:26:00] [INFO] Stopping Kafka consumer...
+[2026-03-30 19:26:00] [INFO] Kafka consumer thread stopped
+[2026-03-30 19:26:01] [INFO] Kafka consumer stopped
