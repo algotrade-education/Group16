@@ -1,0 +1,7 @@
+numpy
+pandas
+pyyaml
+python-dotenv
+optuna
+psycopg[binary]
+paperbroker

@@ -1,0 +1,46 @@
+data:
+  in_sample_file:  "data/sample/vn30_in_sample.csv"
+  out_sample_file: "data/sample/vn30_out_sample.csv"
+  fetch_data:       false
+  save_fetched_data: false
+
+in_sample:
+  start_date: "2024-01-01"
+  end_date:   "2024-06-30"
+
+out_sample:
+  start_date: "2023-01-01"
+  end_date:   "2023-12-31"
+
+results:
+  base_directory: "results"
+
+strategy:
+  # capital & trade settings
+  capital:         400000000
+  contract_value:  100000
+  margin_rate:     0.2
+  fee_per_trade:   0.47
+
+  # squeeze breakout parameters
+  bb_period:      20
+  bb_mult:        2.0
+  kc_mult:        1.5
+  atr_period:     14
+  mom_period:     12
+  vol_mult:       1.5
+  tp_atr:         2.0
+  sl_atr:         1.0
+  size_pct:       0.10
+  cooldown_bars:  3
+
+optimization:
+  n_trials: 100
+
+  bb_mult_range:      [1.5, 3.0]
+  kc_mult_range:      [1.0, 2.5]
+  vol_mult_range:     [1.2, 2.5]
+  tp_atr_range:       [1.5, 4.0]
+  sl_atr_range:       [0.5, 2.0]
+  mom_period_range:   [6, 20]
+  cooldown_bars_range: [1, 6]
