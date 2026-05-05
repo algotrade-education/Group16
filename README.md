@@ -114,36 +114,29 @@ TARGET_COMP_ID=SERVER
 Run the trader:
 
 ```bash
-python main.py
+python live.py
 ```
 
 ## Strategy Parameters
 
-All parameters are defined as constants at the top of `main.py` and can be tuned without touching the logic:
+Parameters are optimize using sample data from 2025-01-01 to 2026-02-28 :
 
 ```python
-# Indicator periods
-BB_PERIOD    = 20      # Bollinger Band & Keltner Channel lookback
-BB_MULT      = 2.0     # Bollinger Band standard-deviation multiplier
-KC_MULT      = 1.5     # Keltner Channel ATR multiplier
-ATR_PERIOD   = 14      # ATR period (used for Keltner & exit sizing)
-MOM_PERIOD   = 12      # Linear-regression momentum lookback
+optimization:
+  n_trials: 100
 
-# Entry filters
-VOL_MULT     = 1.5     # Volume spike threshold (× 20-bar mean)
-
-# Exit sizing
-TP_ATR       = 2.0     # Take-profit distance in ATR units
-SL_ATR       = 1.0     # Stop-loss distance in ATR units
-
-# Position sizing & flow control
-SIZE_PCT     = 0.10    # Fraction of max-placeable qty per trade
-COOLDOWN_BARS = 3      # Bars to skip after a trade closes
+  bb_mult_range:      [1.5, 3.0]
+  kc_mult_range:      [1.0, 2.5]
+  vol_mult_range:     [1.2, 2.5]
+  tp_atr_range:       [1.5, 4.0]
+  sl_atr_range:       [0.5, 2.0]
+  mom_period_range:   [6, 20]
+  cooldown_bars_range: [1, 6]
 ```
 
 ## Architecture
 
-The system is composed of five components across four logical layers, all wired together in `main()`.
+The system is composed of five components across four logical layers, all wired together in `live()`.
 
 ```
  ┌───────────────────────────────────────────────────────────────────────┐
@@ -243,6 +236,9 @@ A typical session looks like:
 📋 Session summary — trades: 1 | total PnL: +11.40
 ```
 
+## Live trade result
+
+![My photo](./results/live_result.jpg)
 ## Reference
 
 - PaperBroker documentation: https://paperbroker.io/docs
